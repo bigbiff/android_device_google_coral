@@ -78,6 +78,14 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     device/google/coral/init.logging.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(PRODUCT_PLATFORM).logging.rc
 
+#touch modules
+PRODUCT_COPY_FILES += \
+    device/google/coral/modules/ftm5.ko:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/ftm5.ko \
+    device/google/coral/modules/heatmap.ko:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/heatmap.ko \
+    device/google/coral/modules/videobuf2-memops.ko:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/videobuf2-memops.ko \
+    device/google/coral/modules/videobuf2-vmalloc.ko:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/videobuf2-vmalloc.ko \
+    device/google/coral/touchdriver.sh:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/touchdriver.sh
+
 # Pixelstats broken mic detection
 PRODUCT_PROPERTY_OVERRIDES += vendor.audio.mic_break=true
 
