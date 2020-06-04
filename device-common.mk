@@ -123,7 +123,8 @@ PRODUCT_COPY_FILES += \
     device/google/coral/prebuilts/libnos_citadeld_proxy.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/libnos_citadeld_proxy.so \
     device/google/coral/prebuilts/libnos_datagram_citadel.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/libnos_datagram_citadel.so\
     device/google/coral/prebuilts/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/libprotobuf-cpp-full.so \
-    device/google/coral/prebuilts/pixelpowerstats_provider_aidl_interface-cpp.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/pixelpowerstats_provider_aidl_interface-cpp.so
+    device/google/coral/prebuilts/pixelpowerstats_provider_aidl_interface-cpp.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/pixelpowerstats_provider_aidl_interface-cpp.so \
+    device/google/coral/prebuilts/twrp.flags:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/twrp.flags
 
 # Pixelstats broken mic detection
 PRODUCT_PROPERTY_OVERRIDES += vendor.audio.mic_break=true
