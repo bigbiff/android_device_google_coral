@@ -1,7 +1,7 @@
 #!/sbin/sh
 
 fastboot=$(getprop ro.boot.bootreason | cut -d, -F2)
-if [[ $fastboot == bootloader || $fastboot == "longkey" ]]
+if [[ $fastboot == bootloader || $fastboot == "longkey" || $fastboot == "reboot" ]]
 then
 	insmod /sbin/videobuf2-vmalloc.ko
 	insmod /sbin/videobuf2-memops.ko 
