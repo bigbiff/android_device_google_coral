@@ -88,7 +88,6 @@ PRODUCT_COPY_FILES += \
     device/google/coral/prebuilts/qseecomd:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/qseecomd \
     device/google/coral/prebuilts/libdrmfs.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/libdrmfs.so \
     device/google/coral/prebuilts/libxml2.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/libxml2.so \
-    device/google/coral/prebuilts/libvintf.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/libvintf.so \
     device/google/coral/prebuilts/libnetd_client.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/libnetd_client.so \
     device/google/coral/prebuilts/libspcom.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/libspcom.so \
     device/google/coral/prebuilts/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/libkeymasterdeviceutils.so \
@@ -97,7 +96,6 @@ PRODUCT_COPY_FILES += \
     device/google/coral/prebuilts/libqtikeymaster4.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/libqtikeymaster4.so \
     device/google/coral/prebuilts/libQSEEComAPI.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/libQSEEComAPI.so \
     device/google/coral/prebuilts/libdiag.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/libdiag.so \
-    device/google/coral/prebuilts/android.hidl.token@1.0.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/android.hidl.token@1.0.so \
     device/google/coral/prebuilts/libnos_client_citadel.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/libnos_client_citadel.so \
     device/google/coral/prebuilts/libnos_transport.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/libnos_transport.so \
     device/google/coral/prebuilts/citadeld:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/citadeld \
@@ -113,12 +111,9 @@ PRODUCT_COPY_FILES += \
     device/google/coral/prebuilts/android.hardware.boot@1.0-service:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/android.hardware.boot@1.0-service \
     device/google/coral/prebuilts/android.hardware.weaver@1.0-impl.nos.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/android.hardware.weaver@1.0-impl.nos.so \
     device/google/coral/prebuilts/android.hardware.weaver@1.0-service.citadel:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/android.hardware.weaver@1.0-service.citadel \
-    device/google/coral/prebuilts/android.hardware.weaver@1.0.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/android.hardware.weaver@1.0.so \
     device/google/coral/prebuilts/android.hardware.authsecret@1.0-service.citadel:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/android.hardware.authsecret@1.0-service.citadel \
     device/google/coral/prebuilts/android.hardware.authsecret@1.0-impl.nos.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/android.hardware.authsecret@1.0-impl.nos.so \
-    device/google/coral/prebuilts/android.hardware.authsecret@1.0.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/android.hardware.authsecret@1.0.so \
     device/google/coral/prebuilts/android.hardware.oemlock@1.0-service.citadel:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/android.hardware.oemlock@1.0-service.citadel \
-    device/google/coral/prebuilts/android.hardware.oemlock@1.0.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/android.hardware.oemlock@1.0.so \
     device/google/coral/prebuilts/nos_app_weaver.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/nos_app_weaver.so \
     device/google/coral/prebuilts/libnos_citadeld_proxy.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/libnos_citadeld_proxy.so \
     device/google/coral/prebuilts/libnos.so:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/libnos.so \
