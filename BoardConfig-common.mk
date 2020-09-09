@@ -49,6 +49,7 @@ BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/1d84000.ufshc
 BOARD_KERNEL_CMDLINE += twrpfastboot=1
 BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 4096
+BOARD_KERNEL_IMAGE_NAME := Image.lz4
 
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_BOOT_HEADER_VERSION := 2
@@ -265,6 +266,8 @@ BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/c2f2-setup.sh
 
 -include vendor/google_devices/coral/proprietary/BoardConfigVendor.mk
 
+LZMA_RAMDISK_TARGETS := recovery,boot
+
 # TWRP
 TW_THEME := portrait_hdpi
 BOARD_SUPPRESS_SECURE_ERASE := true
@@ -275,18 +278,17 @@ TW_INCLUDE_CRYPTO := true
 AB_OTA_UPDATER := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_RECOVERY_ADDITIONAL_RELINK_BINARY_FILES += out/target/product/$(PRODUCT_HARDWARE)/system/bin/strace 
-TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += out/target/product/$(PRODUCT_HARDWARE)/system/lib64/android.hardware.authsecret@1.0.so
-TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += out/target/product/$(PRODUCT_HARDWARE)/system/lib64/android.hardware.oemlock@1.0.so
 TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += out/target/product/$(PRODUCT_HARDWARE)/vendor/lib/hw/bootctrl.msmnile.so
-TW_RECOVERY_ADDITIONAL_RELINK_BINARY_FILES += out/target/product/$(PRODUCT_HARDWARE)/system/bin/crash_dump32
-TW_RECOVERY_ADDITIONAL_RELINK_BINARY_FILES += out/target/product/$(PRODUCT_HARDWARE)/system/bin/crash_dump64
+#TW_RECOVERY_ADDITIONAL_RELINK_BINARY_FILES += out/target/product/$(PRODUCT_HARDWARE)/system/bin/crash_dump32
+#TW_RECOVERY_ADDITIONAL_RELINK_BINARY_FILES += out/target/product/$(PRODUCT_HARDWARE)/system/bin/crash_dump64
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 # MTP will not work until we update it to support ffs
 TW_EXCLUDE_MTP := true
 TW_USE_TOOLBOX := true
 #TARGET_RECOVERY_PIXEL_FORMAT := ABGR_8888
-TW_NO_HAPTICS := true
 TW_NO_BIND_SYSTEM := true
 TW_INCLUDE_REPACKTOOLS := true
-#TW_EXTRA_LANGUAGES := true
+TW_SUPPORT_INPUT_1_3_HAPTICS := true
+TW_EXTRA_LANGUAGES := true
+TW_INCLUDE_LIBRESETPROP := true
