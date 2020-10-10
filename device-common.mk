@@ -78,7 +78,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     device/google/coral/init.logging.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(PRODUCT_PLATFORM).logging.rc
 
-#touch modules
+#TWRP files
+    #device/google/coral/prebuilts/fastbootmanifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/manifest.xml
 PRODUCT_COPY_FILES += \
     device/google/coral/modules/ftm5.ko:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/ftm5.ko \
     device/google/coral/modules/heatmap.ko:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/lib64/heatmap.ko \

@@ -950,3 +950,7 @@ endif
 # Write flags to the vendor space in /misc partition.
 PRODUCT_PACKAGES += \
     misc_writer
+
+#TWRP fastboot
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.expect.baseband=g8150-00063-200409-B-6382684
