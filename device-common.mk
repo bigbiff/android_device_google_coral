@@ -79,7 +79,6 @@ PRODUCT_COPY_FILES += \
     device/google/coral/init.logging.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(PRODUCT_PLATFORM).logging.rc
 
 #TWRP files
-    #device/google/coral/prebuilts/fastbootmanifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/manifest.xml
 PRODUCT_COPY_FILES += \
     device/google/coral/modules/ftm5.ko:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/ftm5.ko \
     device/google/coral/modules/heatmap.ko:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/lib64/heatmap.ko \
@@ -106,6 +105,7 @@ PRODUCT_COPY_FILES += \
     device/google/coral/prebuilts/libqmi_cci.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libqmi_cci.so \
     device/google/coral/prebuilts/libqmi_common_so.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libqmi_common_so.so \
     device/google/coral/prebuilts/manifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/vintf/manifest.xml \
+    device/google/coral/prebuilts/fastbootmanifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/manifest.xml  \
     device/google/coral/prebuilts/compatibility_matrix.device.xml:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/vintf/compatibility_matrix.device.xml \
     device/google/coral/prebuilts/compatibility_matrix.legacy.xml:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/vintf/compatibility_matrix.legacy.xml \
     device/google/coral/prebuilts/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/android.hardware.gatekeeper@1.0-service-qti \
