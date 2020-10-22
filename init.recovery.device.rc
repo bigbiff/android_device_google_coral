@@ -42,8 +42,6 @@ service touchdriver /system/bin/touchdriver.sh
 
 on property:twrp.apex.loaded=true
    export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/apex/com.android.runtime.release.apex/lib64:/apex/com.google.android.media.swcodec.apex/lib64:/apex/com.android.media.swcodec.apex/lib64
-   start servicemanager
-   start hwservicemanager
    start prepdecrypt
 
 on property:sys.usb.config=fastboot
@@ -148,6 +146,7 @@ service vendor.health-2-0 /system/bin/android.hardware.health@2.0-service
     user root
     group root
     seclabel u:r:recovery:s0
+
 service vendor.citadeld /system/bin/citadeld
     disabled
     user root
