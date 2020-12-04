@@ -123,7 +123,8 @@ PRODUCT_COPY_FILES += \
     device/google/coral/prebuilts/pixelpowerstats_provider_aidl_interface-cpp.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/pixelpowerstats_provider_aidl_interface-cpp.so \
     device/google/coral/prebuilts/android.hardware.vibrator@1.3-service.coral:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/android.hardware.vibrator@1.3-service.coral \
     device/google/coral/prebuilts/twrp.flags:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/twrp.flags \
-    device/google/coral/prebuilts/ueventd.rc:$(TARGET_COPY_OUT_RECOVERY)/root/ueventd.rc
+    device/google/coral/prebuilts/ueventd.rc:$(TARGET_COPY_OUT_RECOVERY)/root/ueventd.rc \
+    device/google/coral/prebuilts/otacerts.zip:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/security/otacerts.zip
 
 # Pixelstats broken mic detection
 PRODUCT_PROPERTY_OVERRIDES += vendor.audio.mic_break=true
