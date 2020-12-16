@@ -120,6 +120,35 @@ PRODUCT_COPY_FILES += \
     device/google/coral/prebuilts/libnos_citadeld_proxy.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libnos_citadeld_proxy.so \
     device/google/coral/prebuilts/libnos_datagram_citadel.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libnos_datagram_citadel.so\
     device/google/coral/prebuilts/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libprotobuf-cpp-full.so \
+    device/google/coral/prebuilts/android.hardware.keymaster@4.0-impl.nos.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/android.hardware.keymaster@4.0-impl.nos.so \
+    device/google/coral/prebuilts/android.hardware.oemlock@1.0-impl.nos.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/android.hardware.oemlock@1.0-impl.nos.so \
+    device/google/coral/prebuilts/libnos.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libnos.so \
+    device/google/coral/prebuilts/libqmi_encdec.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libqmi_encdec.so \
+    device/google/coral/prebuilts/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so \
+    device/google/coral/prebuilts/libnosprotos.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libnosprotos.so \
+    device/google/coral/prebuilts/libqmi_client_qmux.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libqmi_client_qmux.so \
+    device/google/coral/prebuilts/nos_app_avb.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/nos_app_avb.so \
+    device/google/coral/prebuilts/nos_app_keymaster.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/nos_app_keymaster.so \
+    device/google/coral/prebuilts/libicuuc.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libicuuc.so \
+    device/google/coral/prebuilts/libmdmdetect.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libmdmdetect.so \
+    device/google/coral/prebuilts/libicui18n.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libicui18n.so \
+    device/google/coral/prebuilts/libdsutils.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libdsutils.so \
+    device/google/coral/prebuilts/libqmiservices.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libqmiservices.so \
+    device/google/coral/prebuilts/librpmb.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/librpmb.so \
+    device/google/coral/prebuilts/libssd.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libssd.so \
+    device/google/coral/prebuilts/libidl.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libidl.so \
+    device/google/coral/prebuilts/libsecureui.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libsecureui.so \
+    device/google/coral/prebuilts/libdrmtime.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libdrmtime.so \
+    device/google/coral/prebuilts/libqisl.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libqisl.so \
+    device/google/coral/prebuilts/libGPreqcancel.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libGPreqcancel.so \
+    device/google/coral/prebuilts/libops.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libops.so \
+    device/google/coral/prebuilts/libStDrvInt.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libStDrvInt.so \
+    device/google/coral/prebuilts/libtime_genoff.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libtime_genoff.so \
+    device/google/coral/prebuilts/libsecureui_svcsock.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libsecureui_svcsock.so \
+    device/google/coral/prebuilts/libspl.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libspl.so \
+    device/google/coral/prebuilts/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libGPreqcancel_svc.so \
+    device/google/coral/prebuilts/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/vendor.display.config@1.0.so \
+    device/google/coral/prebuilts/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     device/google/coral/prebuilts/pixelpowerstats_provider_aidl_interface-cpp.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/pixelpowerstats_provider_aidl_interface-cpp.so \
     device/google/coral/prebuilts/android.hardware.vibrator@1.3-service.coral:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/android.hardware.vibrator@1.3-service.coral \
     device/google/coral/prebuilts/twrp.flags:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/twrp.flags \
