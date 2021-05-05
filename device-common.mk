@@ -128,6 +128,8 @@ PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := true
 #TWRP
 PRODUCT_COPY_FILES += \
     device/google/coral/init.recovery.usb.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.usb.rc \
-    device/google/coral/prebuilts/ftm5.ko:$(TARGET_COPY_OUT_RECOVERY)/root/ftm5.ko \
-    device/google/coral/prebuilts/sec_touch.ko:$(TARGET_COPY_OUT_RECOVERY)/root/sec_touch.ko \
+    device/google/coral/prebuilts/ftm5.ko:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/ftm5.ko \
+    device/google/coral/prebuilts/heatmap.ko:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/heatmap.ko \
+    device/google/coral/prebuilts/videobuf2-memops.ko:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/videobuf2-memops.ko \
+    device/google/coral/prebuilts/videobuf2-vmalloc.ko:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/videobuf2-vmalloc.ko \
     device/google/coral/prebuilts/touchdriver.sh:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/touchdriver.sh

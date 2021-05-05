@@ -8,3 +8,11 @@ on init
     write /sys/module/msm_poweroff/parameters/warm_reset 1
     # Enable thermal mitigation
     write /sys/devices/virtual/thermal/tz-by-name/backup-charge/mode enabled
+    start touchdriver
+
+service touchdriver /system/bin/touchdriver.sh
+    oneshot
+    disabled
+    user root
+    group root
+    seclabel u:r:recovery:s0
