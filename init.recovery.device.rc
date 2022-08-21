@@ -10,9 +10,22 @@ on init
     write /sys/module/msm_poweroff/parameters/warm_reset 1
     # Enable thermal mitigation
     write /sys/devices/virtual/thermal/tz-by-name/backup-charge/mode enable
+
+on property:ro.crypto.state=encrypted && property:ro.crypto.type=file
     start vendor.citadeld
     start vendor.weaver_hal
     start boot-hal-1-2
+
+on property:sys.usb.config=fastboot
+   start servicemanager
+   start hwservicemanager
+   stop health-hal-2-1
+   stop boot-hal-1-0
+   restart servicemanager
+   restart hwservicemanager
+   restart boot-hal-1-2
+   restart health-hal-2-1
+   restart fastbootd
 
 service vendor.citadeld /system/bin/citadeld
     disabled
