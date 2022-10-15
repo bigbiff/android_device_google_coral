@@ -56,7 +56,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image.lz4
 
 # DTBO partition definitions
-BOARD_PREBUILT_DTBOIMAGE := device/google/coral-kernel/dtbo.img
+#BOARD_PREBUILT_DTBOIMAGE := device/google/coral-kernel/dtbo.img
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 
 TARGET_NO_KERNEL := false
